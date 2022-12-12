@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - Print a string
+ * main - Entry point
  *
- * Description: Use printf
+ * Description: use printf
  *
- * Return: Always 0 (success) 
+ * Return: 0
  */
 
 int main(void)
