@@ -1,1 +1,1 @@
-This is a repository describing c programming language
+This is a README describing c programming language
