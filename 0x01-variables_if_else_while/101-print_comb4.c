@@ -1,41 +1,37 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - Entry point
  *
- * Description: The success combination
- *
- * Return: Always 0 (Success)
+ * Return: Always (Success)
  */
 
 int main(void)
 {
-	int ch, a, b, c;
+	int c, i, k;
 
-	ch = 0;
-	for (ch = 1; ch < 1000; ch++)
-	{
-		a = ch / 100;
-		b = ch / 10;
-		c = ch % 10;
-
-		if ((a > b || a > c || b > c) || ((a == b) || (b == c) || (a == c)))
+		for (c = '0'; c <= '9'; c++)
 		{
-			continue;
-		}
+			for (i = '0'; i <= '9'; i++)
+			{
+				for (k = '0'; k <= '9'; k++)
+				{
+					if (c < i && i < k)
+					{
+						putchar(c);
+						putchar(i);
+						putchar(k);
 
-		putchar((a) + '0');
-		putchar((b) + '0');
-		putchar((c) + '0');
-		if (ch == 999)
-		{
-			break;
+						if (c != '7')
+						{
+							putchar(',');
+							putchar(' ');
+						}
+					}
+				}
+			}
 		}
-		putchar(',');
-		putchar(' ');
-	}
-	putchar('\n');
-	return (0);
+		putchar('\n');
+		return (0);
 
 }
