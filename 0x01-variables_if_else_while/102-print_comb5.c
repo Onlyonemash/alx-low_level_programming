@@ -9,6 +9,7 @@
 
 int main(void)
 {
+
 	int c, i, k, j;
 
 	for (c = 48; c <= 57; c++)
@@ -26,12 +27,12 @@ int main(void)
 						putchar(' ');
 						putchar(k);
 						putchar(j);
+					       	if (c + i + k + j == 227 && c == 57i)
 
-						if (c + i + k + j == 227 && c == 57)
 						{
-						break;
+					        break;
 						}
-						else
+					        else
 						{
 						putchar(',');
 						putchar(' ');
@@ -43,4 +44,5 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
+
 }

@@ -1,1 +1,1 @@
-This is a README describing c programming language
+learning to debug
